@@ -1,0 +1,72 @@
+{
+    "1": {
+        "description": "Hi there, welcome to the Mystery of Santa Cruz. You are a student at UC Santa Cruz and it's an ordinary day studying at McHenry Library. You are shuffling through the books at the library when you discover an old book about the history of Santa Cruz.",
+        "choices": {
+            "a": {"text": "Open the book?", "next": "2"}
+        }
+    },
+    "2": {
+        "description": "Upon opening the book you discover a secret compartment inside and a latch to open the compartment. Do you want to unlock the latch?",
+        "choices": {
+            "a": {"text": "Unlock the latch", "next": "3"},
+            "b": {"text": "Back", "next": "1"}
+        }
+    },
+    "3": {
+        "description": "Inside the compartment you find an ancient map of Santa Cruz and different locations marked with red X's. There is also a tiny journal from somebody named Samuel Slugster. You turn the book around and the back of it reads as follows: 'Samuel Slugster came to the town of Santa Cruz in 1900 and founded the Santa Cruz Beach Boardwalk. He was beloved by all the town residents and left a huge impact on its culture which is why he wrote this book about the history of Santa Cruz. Samuel accumulated a lot of wealth during his life and suddenly went missing in 1930 while he was hiking in the Henry Cowell Redwood Forest. Nobody ever found his body and it's still a mystery to this day where Samuel is and rumor has it that he took all his money with him.' Upon reading the journal you notice that the map and journal might lead to Samuel's mysterious whereabouts. Do you want to pursue the mystery?",
+        "choices": {
+            "a": {"text": "Yes! Let's find Samuel!", "next": "4"},
+            "b": {"text": "No, go back", "next": "1"}
+        }
+    },
+    "4": {
+        "description": "Great! The map points towards the Santa Cruz Beach Boardwalk. This would be the best starting point since Samuel founded the Boardwalk in 1900.",
+        "choices": {
+            "a": {"text": "To the boardwalk!", "next": "5"},
+            "b": {"text": "Back", "next": "3"}
+        }
+    },
+    "5": {
+        "description": "Welcome to the Santa Cruz Beach Boardwalk! Samuel's favorite part of the Boardwalk was its arcade. The map and journal indicate more clues there. Do you want to head to the arcade?",
+        "choices": {
+            "a": {"text": "To the arcade!", "next": "6"},
+            "b": {"text": "Back", "next": "4"}
+        }
+    },
+    "6": {
+        "description": "Great! You've arrived at the arcade. There is a mysterious looking booth in the arcade titled, 'The Riddler'. The journal indicates that Samuel loved riddles. Do you want to approach the booth and play the game?",
+        "choices": {
+            "a": {"text": "Let's Play!", "next": "7"},
+            "b": {"text": "Back", "next": "5"}
+        }
+    },
+    "7": {
+        "description": "You approach the booth and the tall, shady man running it says, 'Ahh, I see you have chosen to test your fate with my puzzling riddles. I know you've been looking for someone special. I can help you but you must answer wisely as your life could change with the reward I behold. Are you ready for the challenge?'",
+        "choices": {
+            "a": {"text": "Yes.", "next": "8"},
+            "b": {"text": "No, go back", "next": "6"}
+        }
+    },
+    "8": {
+        "description": "Here's your riddle: \nI stand watch with many arms, yet I do not wave,\nI grow tall where secrets are kept and the brave tread light.\nGreen giants in a line, under me, paths wind tight.\nI guard old treasures, not gold but stories engraved.\nWhere am I?",
+        "riddleAnswer": "forest",
+        "nextSuccess": "9",
+        "nextFailure": "8"
+    },
+    "9": {
+        "description": "Correct! You receive a special token inscribed with the phrase 'Open Sesame'. Remember this for later.",
+        "choices": {
+            "a": {"text": "Go to the forest", "next": "10"},
+            "b": {"text": "Back", "next": "8"}
+        }
+    },
+    "10": {
+        "description": "You made it to the Henry Cowell Redwoods Forest! You see a large, bewildering tree sticking out in the forest. It seems to have a slight opening in the middle. Enter the phrase on the token to insert the token into the tree.",
+        "tokenAnswer": "open sesame",
+        "nextSuccess": "11",
+        "nextFailure": "10"
+    },
+    "11": {
+        "description": "Upon inserting the token, the tree magically opens up and you find an old scroll. The scroll contains a letter from Samuel that says he faked his disappearance many years ago and left all his money behind in gold for the person who solves his mystery. Under the scroll is five large bricks of gold! Congratulations for solving the mystery."
+    }
+}
